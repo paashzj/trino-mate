@@ -14,4 +14,4 @@ COPY docker-build /opt/sh/trino/mate
 
 WORKDIR /opt/sh/trino
 
-CMD ["/usr/local/bin/dumb-init", "bash", "-vx","/opt/sh/trino/mate/scripts/start.sh"]
+CMD ["/usr/bin/dumb-init", "bash", "-vx","/opt/sh/trino/mate/scripts/start.sh"]
