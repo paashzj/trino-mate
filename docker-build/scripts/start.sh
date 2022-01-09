@@ -1,6 +1,5 @@
 #!/bin/bash
 
-mkdir /opt/sh/trino/logs
-
-java -Xmx128M -XX:MaxDirectMemorySize=32M -jar /opt/sh/trino/mate/trino-mate.jar >>/opt/sh/trino/logs/trino_mate.stdout.log 2>>/opt/sh/trino/logs/trino_mate.stderr.log
+DIR="$( cd "$( dirname "$0"  )" && pwd  )"
+bash -x $DIR/start-daemon.sh
 tail -f /dev/null
