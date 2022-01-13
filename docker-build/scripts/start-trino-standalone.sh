@@ -2,6 +2,7 @@
 
 mkdir $TRINO_HOME/etc
 mkdir $TRINO_HOME/etc/catalog
+mkdir -p $TRINO_HOME/logs
 cp $TRINO_HOME/mate/conf/node/standalone/config.properties $TRINO_HOME/etc/config.properties
 cp $TRINO_HOME/mate/conf/node/standalone/jvm.config $TRINO_HOME/etc/jvm.config
 cp $TRINO_HOME/mate/conf/node/standalone/node.properties $TRINO_HOME/etc/node.properties
